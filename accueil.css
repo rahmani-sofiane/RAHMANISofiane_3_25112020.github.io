@@ -51,7 +51,6 @@ button
 {
     background: linear-gradient(to bottom right, #FF79DA,#9356DC);
     color: white;
-
 }
 a
 {
@@ -75,12 +74,17 @@ button
     border: none;
     width: 15em;
 }
+.fonctionnement
+{
+    padding-bottom: 2em;
+}
 .container-fonctionnement
 {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
+    max-width: 638px;
 }
 .bloc-fonctionnement
 {
@@ -146,6 +150,9 @@ button
     width: 322px;
     font-weight: bold ;
     font-size: 1.5em;
+    margin: auto;
+    margin-bottom: 1em;
+    padding-top: 1.5em;
 }
 .container-restaurant
 {
@@ -226,11 +233,16 @@ button
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
 }
 .fa-heart
 {
     font-size: 1.5em;
-    padding-right: 1em;
+    margin-right: 1em;
+}
+.fa-heart:hover 
+{
+    background: linear-gradient(to top, #FF79DA,#9356DC);
 }
 footer
 {
@@ -265,4 +277,35 @@ footer
     margin-block-start: 0em;
     color: white; 
     margin-left: 1em;
+}
+
+@media screen and (min-width: 640px) 
+{
+    .title
+    {
+        text-align:center;
+    }
+    .container-fonctionnement
+    {
+        max-width: 958px;
+    }
+    .container-restaurant
+    {
+        max-width: 320px;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 992px)
+{
+    .container-fonctionnement
+    {
+        min-width: 992px;
+        
+    }
+    .container-restaurant
+    {
+        max-width: 700px;
+        margin: auto;
+        justify-content: space-between;
+    }
 }
