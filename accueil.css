@@ -1,0 +1,268 @@
+
+body
+{
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+h1
+{
+    font-size: 1.5em;
+    text-align: center;
+    margin-block-start: 0em;
+    padding-top: 1em;
+}
+h2
+{
+    font-size: 1em;
+    text-align: center;
+}
+
+.logo
+{
+    width: 10em;
+    margin-right: auto;
+    margin-left: auto;
+}
+.img-logo
+{
+    width: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.container-localisation
+{
+    background-color: rgb(234, 234, 234);
+    box-shadow: 0px 10px 10px -5px rgb( 205,205,205)inset;
+}
+.localisation
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 10em;
+    padding-top: 1em;
+}
+.legende-map
+{
+    margin-left: 1em;
+    margin-block-start: 0em;
+}
+button
+{
+    background: linear-gradient(to bottom right, #FF79DA,#9356DC);
+    color: white;
+
+}
+a
+{
+    text-decoration: none;
+}
+.search
+{
+    background: rgb( 246,246,246);
+}
+.btn
+{
+    margin: auto;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+button
+{
+    border-radius: 50px;
+    border: none;
+    width: 15em;
+}
+.container-fonctionnement
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+.bloc-fonctionnement
+{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: solid 1px grey;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    height: 3em;
+    width: 20em;
+    background: rgb( 246,246,246);
+
+}
+.bloc-fonctionnement2
+{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: solid 1px grey;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    height: 3em;
+    width: 20em;
+    background: rgb( 247,235,255);
+}
+.number
+{
+    width: 1.5em;
+    background-color: #9356DC;
+    border-radius: 100%;
+    text-align: center;
+    color: white;
+    right: 0.5em;
+    margin-left: -0.5em;
+}
+.fa-mobile-alt
+{
+    color: grey;
+    margin-left: 1em;
+}
+.fa-list-ul
+{
+    color: grey;
+    margin-left: 1em;
+}
+.fa-store
+{
+    color: #9356DC;
+    margin-left: 1em;
+}
+.legende-fonctionnement
+{
+    margin-left: 1.5em;
+    width: 100%;
+}
+.restaurant
+{
+    background: rgb( 246,246,246);
+}
+.title
+{
+    width: 322px;
+    font-weight: bold ;
+    font-size: 1.5em;
+}
+.container-restaurant
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.bloc-picture-restaurant
+{
+    width: 20em;
+    box-shadow: 0px 5px 10px 0px rgb( 220,220,220);
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-start: 0em;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.picture-restaurant
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.picture-wrapper
+{
+    position: relative;
+    height: 15em;
+}
+.nouveau
+{
+    background-color: rgb(132,230,209);
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    position: absolute;
+    right: 2em;
+    top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.5em;
+    height: 2em;
+    color:black;
+    font-weight: lighter;
+ 
+}
+.legende-restaurant
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 5em;
+    background-color: white;
+    color: black;
+    border: white solid 1px;
+}
+.text-legende
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1em;
+}
+.restaurant-name
+{
+    width: 100%;
+    margin-block-end: 0em;
+    font-weight: bold;
+}
+.restaurant-location
+{
+    width: 100%;
+    margin-block-start: 0.5em;
+}
+.heart-icone
+{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.fa-heart
+{
+    font-size: 1.5em;
+    padding-right: 1em;
+}
+footer
+{
+    background-color: rgb(53, 53, 53)
+
+}
+.logo-footer-img
+{
+    font-size: 1em;
+    margin-left: 1em;
+
+}
+.footer-item
+{
+    display: flex;
+    color: white;
+}
+
+.bloc-icone
+{
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 1em;
+}
+.p-footer
+{
+    margin-block-start: 0em;
+    color: white;
+}
+.p-footer2
+{
+    margin-block-start: 0em;
+    color: white; 
+    margin-left: 1em;
+}
