@@ -1,0 +1,123 @@
+// Variables 
+$font-title: "Shrikhand";
+$length-container-dish: 10em;
+$background-color-main: rgb(246,246,246);
+$width:400px;
+$margin-auto:auto;
+$padding-left-dish:0.5em;
+$padding-top-dish:0.5em;
+
+body
+{
+    margin: 0px;
+}
+main
+{
+    background: $background-color-main;
+}
+h1
+{
+    font-family: $font-title;
+}
+h2
+{
+    width: $width;
+    margin: $margin-auto;
+}
+p
+{
+    margin-block-start: 0em;
+    margin-block-end: 0.5em;
+}
+header
+{
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;   
+}
+.logo
+{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+
+}
+.back
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 1em;
+
+}
+.img-logo
+{
+    width: 10em;
+}
+.img-menu
+{
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+}
+.container-menu
+{
+    background-color:$background-color-main;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.name-restaurant
+{
+    width: $width;
+    margin: $margin-auto;
+    display: flex;
+    justify-content: space-between;
+}
+.icone-heart
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+h2:hover
+{
+    border-bottom: solid 5px rgb(132, 230, 209);
+}
+.container-dish
+{
+    width: $width;
+    background-color: white;
+    border-radius: 10px;
+    margin: $margin-auto;
+}
+.name-plat
+{
+    font-weight: bold;
+    padding-left: $padding-left-dish;
+    padding-top: $padding-top-dish;
+}
+.wrap-accompagnement
+{
+    padding-left: $padding-left-dish;
+    display: flex;
+    justify-content: space-between;
+}
+.price
+{
+    font-weight: bold;
+}
+.btn
+{
+    display: flex;
+    justify-content: center;    
+}
+button{
+    background: linear-gradient(to bottom right, #FF79DA,#9356DC);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    width: 10em;
+    height: 3em;
+}
+
