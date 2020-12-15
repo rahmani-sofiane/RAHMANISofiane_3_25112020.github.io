@@ -1,3 +1,83 @@
+
+.screen-loading{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(100, 100, 100, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__screen-loading{
+    animation: Apparition 3s forwards;
+}
+
+@keyframes Apparition {
+    100% {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+.screen-loading__animation{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+@keyframes loading {
+    0% {
+        height: 0%;
+    }
+
+    50% {
+        background-color: #FF79DA;
+        height: 40px;
+    }
+
+    100% {
+        background-color: #99E2D0;
+        height: 0;
+    }
+}
+.screen-loading__animation__bar {
+    width: 7px;
+    height: 5px;
+    background: #9356DC;
+    margin: 0 4px;
+    border-radius: 10px;
+    animation: loading 1500ms infinite;
+    box-shadow: 0px 0px 1px 2px #99E2D0;
+} 
+.screen-loading__animation__bar:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.screen-loading__animation__bar:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.screen-loading__animation__bar:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.screen-loading__animation__bar:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.screen-loading__animation__bar:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.screen-loading__animation__bar:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.screen-loading__animation__bar:nth-child(8) {
+    animation-delay: 0.7s;
+} 
 body
 {
     margin: auto;
@@ -14,6 +94,7 @@ h2
 {
     font-size: 1em;
     text-align: center;
+    font-weight: 100;
 }
 
 .logo
@@ -46,11 +127,6 @@ h2
     margin-left: 1em;
     margin-block-start: 0em;
 }
-button
-{
-    background: linear-gradient(to bottom right, #FF79DA,#9356DC);
-    color: white;
-}
 a
 {
     text-decoration: none;
@@ -65,13 +141,22 @@ a
     height: 3em;
     display: flex;
     justify-content: center;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
+    padding-top: 1em;
 }
 button
 {
     border-radius: 50px;
     border: none;
     width: 15em;
+    background: linear-gradient(to bottom right, #FF79DA,#9356DC);
+    box-shadow: 0px 0px 10px 0px rgb( 220,220,220);
+    color: white;
+}
+button:hover {
+    transition: all 250ms;
+    opacity: 0.8;
+    box-shadow: 0px 0px 10px 0px rgb(150, 150, 150);
 }
 .fonctionnement
 {
@@ -143,6 +228,7 @@ button
 .restaurant
 {
     background: rgb( 246,246,246);
+    padding-bottom: 2.5em;
 }
 .title
 {
@@ -196,70 +282,69 @@ button
     width: 5.5em;
     height: 2em;
     color:black;
-    font-weight: lighter;
+    font-weight: 100;
  
 }
 .legende-restaurant
 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    height: 5em;
+    justify-content: space-between;
     background-color: white;
-    color: black;
     border: white solid 1px;
-}
-.text-legende
-{
-    display: flex;
-    flex-wrap: wrap;
     padding-left: 1em;
 }
-.restaurant-name
-{
-    width: 100%;
-    margin-block-end: 0em;
-    font-weight: bold;
-}
-.restaurant-location
-{
-    width: 100%;
-    margin-block-start: 0.5em;
+.legende-restaurant__description{
+    color: black;
 }
 .heart-icone
 {
-    height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-
 }
 .fa-heart
 {
     font-size: 1.5em;
     margin-right: 1em;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    transition: color 0.5s ease-in;
 }
 .fa-heart:hover 
 {
-    background: linear-gradient(to top, #FF79DA,#9356DC);
+        color: #9356DC;
+        -webkit-text-stroke: 1px #9356DC;
 }
 footer
 {
-    background-color: rgb(53, 53, 53)
+    background-color: rgb(53, 53, 53);
 
 }
-.logo-footer-img
-{
-    font-size: 1em;
-    margin-left: 1em;
+.container-footer{
+    
+    padding-top: 1em;
+    padding-bottom: 1em;
 
+}
+.footer-logo
+{
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 .footer-item
 {
     display: flex;
     color: white;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
 }
-
+.footer-item__logo__img
+{
+    fill: white;
+    margin-left: 1em;
+    font-size: 1em;
+}
 .bloc-icone
 {
     width: 1.5em;
@@ -292,6 +377,10 @@ footer
     {
         max-width: 320px;
         margin: auto;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
     }
 }
 @media screen and (min-width: 992px)
