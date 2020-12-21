@@ -12,6 +12,7 @@
 }
 .container__screen-loading{
     animation: Apparition 3s forwards;
+    z-index: 1;
 }
 
 @keyframes Apparition {
