@@ -4,20 +4,23 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$footer-color-item: white;
 
 /* font */
 $font-title: 'Shrikhand', sans-serif;
 $font-text: 'Roboto', sans-serif;
 
-$length-container-dish: 10em;
+/* bakcground-color */
 $background-color-main: rgb(246,246,246);
+$background-animation:rgb(132, 230, 209);
+$background-color-button:linear-gradient(to bottom right, #FF79DA,#9356DC);
+
+/* length/width/padding/margin/ */
+$length-container-dish: 10em;
 $width:350px;
 $margin-auto:auto;
 $padding-left-dish:0.5em;
 $padding-top-dish:0.5em;
-$background-animation:rgb(132, 230, 209);
-$background-color-button:linear-gradient(to bottom right, #FF79DA,#9356DC);
-$footer-color-item: white;
 
 //Mixins 
 
@@ -25,18 +28,6 @@ $footer-color-item: white;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-//keyframes 
-@keyframes FadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(10px)
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 
@@ -131,6 +122,16 @@ p
         border-bottom: solid 3px $color-tertiary ;
         width: 40px;
         padding-top: 5px;
+    }
+}
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 .container-dish
