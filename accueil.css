@@ -9,10 +9,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 .container__screen-loading{
     animation: Apparition 3s forwards;
-    z-index: 1;
 }
 
 @keyframes Apparition {
@@ -255,6 +255,7 @@ button:hover {
     margin-block-start: 0em;
     overflow: hidden;
     border-radius: 10px;
+    z-index: 0;
 
 }
 .picture-restaurant
@@ -268,6 +269,7 @@ button:hover {
 {
     position: relative;
     height: 15em;
+    z-index: 0;
 }
 .nouveau
 {
